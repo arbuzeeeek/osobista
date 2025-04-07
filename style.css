@@ -1,0 +1,179 @@
+/*Tutaj możesz pozmieniać kolory, nie będę dodawał komentarzy do każdego, pobaw się i sprawdź co pasuje u ciebie <3*/
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #2d2d2d, #3f3f3f);
+    color: #e0e0e0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #a3a3a3;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+  }
+  
+  .portfolio-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .portfolio-btn {
+    background-color: #d4d4d4;
+    color: #1f1f1f;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .portfolio-btn:hover {
+    background-color: #c0c0c0;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .portfolio-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .portfolio-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  footer {
+    background-color: #1f1f1f;
+    padding: 2rem 1rem 3rem;
+    position: relative;
+  }
+  
+  .contact {
+    text-align: center;
+  }
+  
+  .icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .icons i {
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    transition: color 0.3s;
+  }
+  
+  .icons i:hover {
+    color: #d4d4d4;
+  }
+  
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.2);
+    color: #a0a0a0;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  /* Animations */
+  .animated {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .slide-down {
+    transform: translateY(-50px);
+    animation: slideDown 1s forwards;
+  }
+  
+  .slide-in {
+    transform: translateX(50px);
+    animation: slideIn 1s forwards;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
