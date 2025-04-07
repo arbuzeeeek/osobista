@@ -129,7 +129,7 @@ body {
     padding: 0.5rem;
   }
   
-  /* Animations */
+  /* Tutaj masz animacje, mozesz sie nimi pobawic */
   .animated {
     opacity: 0;
     transform: translateY(20px);
